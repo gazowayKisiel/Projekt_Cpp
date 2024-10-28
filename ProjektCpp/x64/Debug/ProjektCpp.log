@@ -1,0 +1,5 @@
+﻿  Particle.cpp
+  ProjektCpp.cpp
+C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\ProjektCpp.cpp(29,25): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Generowanie kodu...
+  ProjektCpp.vcxproj -> C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\x64\Debug\ProjektCpp.exe
