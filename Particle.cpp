@@ -1,38 +1,30 @@
 #include "Particle.h"
-#include <cmath>
 
 Particle::Particle(double x, double y, double vx, double vy, double radius, double mass, Uint8 R, Uint8 G, Uint8 B)
     : x(x), y(y), vx(vx), vy(vy), radius(radius), mass(mass), R(R), G(G), B(B), ax(0), ay(GRAVITY) {}
 
 void Particle::update(int screenWidth, int screenHeight, double deltaTime) {
-    // Aktualizacja prêdkoœci na podstawie przyspieszenia
     vx += ax * deltaTime;
     vy += ay * deltaTime;
-
-    // Aktualizacja pozycji na podstawie prêdkoœci i przyspieszenia
     x += vx * deltaTime;
     y += vy * deltaTime + 0.5 * ay * deltaTime * deltaTime;
 
-    // Odbicia od œcian w poziomie
     if (x - radius < 0) {
-        vx = -vx * DAMPING; // T³umione odbicie
+        vx = -vx * DAMPING;
         x = radius;
     }
     else if (x + radius > screenWidth) {
-        vx = -vx * DAMPING; // T³umione odbicie
+        vx = -vx * DAMPING;
         x = screenWidth - radius;
     }
 
-    // Odbicia od œcian w pionie
     if (y - radius < 0) {
-        vy = -vy * DAMPING; // T³umione odbicie
+        vy = -vy * DAMPING;
         y = radius;
     }
     else if (y + radius > screenHeight) {
-        vy = -vy * DAMPING; // T³umione odbicie
+        vy = -vy * DAMPING;
         y = screenHeight - radius;
-
-        // Jeœli prêdkoœæ jest bardzo ma³a, zatrzymaj cz¹stkê
         if (std::abs(vy) < 0.1) {
             vy = 0;
         }

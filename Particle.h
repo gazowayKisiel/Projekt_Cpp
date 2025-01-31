@@ -2,7 +2,7 @@
 #define PARTICLE_H
 
 #include <SDL.h>
-#include <vector>
+#include <cmath>
 
 class Particle {
 public:
@@ -11,6 +11,7 @@ public:
     void draw(SDL_Renderer* renderer);
     bool checkCollision(Particle& other);
     void resolveCollision(Particle& other);
+
     double x, y;       // Pozycje
     double vx, vy;     // Prêdkoœci
     double ax, ay;     // Przyspieszenia
@@ -18,7 +19,7 @@ public:
     double mass;       // Masa
     Uint8 R, G, B;     // Kolor
     static constexpr double GRAVITY = 9.81; // Przyspieszenie grawitacyjne
-    static constexpr double DAMPING = 0.8; // Wspó³czynnik t³umienia odbicia
+    static constexpr double DAMPING = 1.01; // Wspó³czynnik t³umienia odbicia
 };
 
 #endif
