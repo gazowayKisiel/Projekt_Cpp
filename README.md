@@ -2,7 +2,7 @@
 
 >> Uruchamianie z pliku .exe
 
-Należy pobrać wszystkie pliki z github i re rozpakować. Powinny znajdować się w tym samym folderze.
+Należy pobrać wszystkie pliki z github i je rozpakować. Powinny znajdować się w tym samym folderze (główny folder 'ProjektCpp' oraz wypakowane biblioteki mają znajdować się w tym samym folderze).
 Aby włączyć symulację należy wejść w ProjektCpp -> x64 -> Debug 
 
 Znajduje się tam plik ProjektCpp.exe
