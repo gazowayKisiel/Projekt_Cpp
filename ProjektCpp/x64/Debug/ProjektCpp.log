@@ -1,5 +1,39 @@
 ﻿  Particle.cpp
+C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\Particle.cpp(38,20): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\Particle.cpp(39,20): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
   ProjektCpp.cpp
-C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\ProjektCpp.cpp(29,25): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\ProjektCpp.cpp(139,53): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103): warning C4244: "argument": konwersja z "_Ty" do "double", możliwa utrata danych
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103): warning C4244:             _Ty=__int64
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „ProjektCpp.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xmemory(723,103):
+  kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+  	C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\ProjektCpp.cpp(64,14):
+  	zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Particle,std::allocator<Particle>>::emplace_back<int,int,int,int,int,__int64,int,int,int>(int &&,int &&,int &&,int &&,int &&,__int64 &&,int &&,int &&,int &&)” funkcji szablon
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(862,24):
+  	zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<int,int,int,int,int,__int64,int,int,int>(int &&,int &&,int &&,int &&,int &&,__int64 &&,int &&,int &&,int &&)” funkcji szablon
+          with
+          [
+              _Ty=Particle
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(780,20):
+  	zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<int,int,int,int,int,__int64,int,int,int>(int &&,int &&,int &&,int &&,int &&,__int64 &&,int &&,int &&,int &&)” funkcji szablon
+          with
+          [
+              _Ty=Particle
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(798,27):
+  	zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int,int,int,int,int,__int64,int,int,int>(_Alloc &,_Objty *const ,int &&,int &&,int &&,int &&,int &&,__int64 &&,int &&,int &&,int &&)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Particle>,
+              _Ty=Particle,
+              _Objty=Particle
+          ]
+  
   Generowanie kodu...
+  LINK : nie znaleziono elementu C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\x64\Debug\ProjektCpp.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
   ProjektCpp.vcxproj -> C:\Users\dell\Desktop\studia\Projekt C++\ProjektCpp\x64\Debug\ProjektCpp.exe
